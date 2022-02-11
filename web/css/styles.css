@@ -1,0 +1,126 @@
+:root {
+    /*Colores*/
+    --primary-color: #7AC70C;
+    --primary-color-dark: #5d9709;
+    
+    /*Neutrales*/
+    --black: #212121;
+    --dark-grey: #4c4c4c;
+    --overlay: rgba(0, 0, 0, 0.1);
+}
+
+/*GENERALES*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.6rem;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.root-container {
+  flex: 1;
+}
+
+/*Tipografía*/
+h1,
+h2,
+h6 {
+  font-family: Overpass, sans-serif;
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+    transition: 250ms all ease;
+    transition-property: background-color;
+}
+
+.btn--primary:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/*Barra de navegación (Sesión iniciada)*/
+.navbar--primary {
+    background-color: var(--primary-color);
+    border-bottom: 0.1rem var(--black) solid;
+}
+
+/*Barra de búsqueda*/
+.search-bar-container {
+  position: relative;
+}
+.search-bar__leading-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 1.6rem;
+  transform: translateY(-50%);
+}
+.search-bar__input[type='search'] {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+  border-radius: 2.4rem;
+  padding: 1rem 4.2rem;
+}
+
+/*Opciones*/
+.nav__options {
+    border-radius: 50%;   
+    cursor: pointer;     
+    text-align: center;
+    transition: 250ms all ease;
+    transition-property: background-color;
+}
+.nav__options-btn-container {
+    padding: 1rem;
+}
+.nav__options-btn-container > i {
+    height: 2rem;
+    width: 2rem;
+}
+.nav__options:hover {
+    background-color: var(--overlay);
+}
+
+/*Estilos de páginas*/
+/*General*/
+.search-container, .topics-container {
+  display: grid;  
+  margin: 4rem 0;
+}
+
+/*Resultados de búsqueda*/
+.search-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/*Temas*/
+.topics-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    row-gap: 1.5rem;
+}
+
+

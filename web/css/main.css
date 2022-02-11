@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*===================MENU==========================*/
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+ }
+ #menu a{
+    color:#3f3f3f;
+    
+}
+
+/*===================== carrusel de imagenes =================== */
+
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+    .servicio-fila{
+        width: 100!important;
+        text-align: center;
+    }
+}
+.carousel.inner {
+    max-height: 56rem;
+}
+
+/*======================= patanllas mas peque;as ============================ */
+@media (max-width : 576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+/* ===================contenedor del formulario ========================== */
+
+   #titulo-formulario{
+       color: #3f3f3f;
+   }
+   #imagen {
+       
+    width: 0 auto; 
+    max-width:0 auto;
+    height: 250px;
+    
+   }
+
+   #probar{
+    text-align: center!important;
+   }

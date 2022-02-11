@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Sobre Nosotros</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!-- CSS -->
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script
+            src="https://kit.fontawesome.com/2f1b1cb395.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <body>
+            <!-- MENU -->
+    <nav class="navbar navbar--primary navbar-expand-lg sticky-top navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" title="logo">
+                <img src="img/logoRP.png" alt="RP logo" style="width: 8rem"/>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="vistas/aprender/aprender_temas.jsp">Temas</a>
+              </li>                  
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="vistas/aprender/descripcion.html">Aprender</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="vistas/dashboard/dashboard.jsp">Dashboard</a>
+              </li>    
+              <li class="nav-item text-uppercase">
+                <a class="nav-link" href="vistas/rank/ranking.jsp">Ranking</a>
+              </li> 
+            </ul>
+            <div class="d-flex align-items-center">
+                    <form class="d-flex search-bar-container" action="vistas/aprender/resultado_busqueda.jsp">
+                      <button type="submit" title="Buscar tema" class="search-bar__leading-icon">
+                          <i class="fas fa-search"></i>
+                      </button>                        
+                      <input
+                          type="search"
+                          placeholder="Buscar tema..."
+                          id="buscador"
+                          name="search_query"
+                          aria-label="Buscar tema"
+                          class="search-bar__input form-control form-control-sm"
+                        />        
+                  </form>
+            <div
+                class="nav__options dropstart ms-5"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Opciones">
+                <div
+                    class="nav__options-btn-container"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>                                                
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item fs-4" href="vistas/perfil/perfil.jsp">Perfil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item fs-4" href="index.jsp">Cerrar sesión</a></li>
+                </ul>
+            </div>  
+          </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- PRINCIPAL -->
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-dark slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img id="joder" src="./img/Bootstrapxm.png" class="d-block w-75 mx-auto" alt="Slide1" width="900" height="600">
+      </div>
+
+      <div class="carousel-item"data-bs-interval="3000">
+        <img  id="joder" src="./img/htmlycss.jpg" class="d-block w-75 mx-auto " alt="slide2" width="900" height="600">
+      </div>
+
+      <div class="carousel-item"data-bs-interval="3000">
+        <img id="joder" src="./img/java.jpg" class="d-block w-75 mx-auto" alt="slide3" width="900" height="600">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  
+</div>
+                <!-- ==============intro======================================= -->
+  <section class="w-50 mx-auto text-center pt-5 " id="intro" >
+    <h1 class="p-3 fs-2 border-top border-3">Un Poco más <span class="text-primary"> Sobre Este Proyecto </span></h1>
+    <p class="p-3 fs-4 text"><span class="text-primary">Somos </span>  el grupo numero 10 , es este proyecto hemos ultilizado todos los conocimientos 
+      adquiridos durante el semestre , Utilizando Tecnologias como Bootstrap, HTML y JSP, tratando de que el  sitio tenga un  resultado  profesional. </p>
+        <span class="text-primary"> ESPEREMOS FUERA DE SU  AGRADO! </span>
+    </section>
+
+  <!--======================= servicios=====================  -->
+  <section id="carajo" class="container-fluid ">
+      <div class="row w-75 mx-auto ">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          
+        <img class="rounded-circle" src="./img/chris.jpg" alt="naruto" width="180" height="180">
+         
+        <div>
+          <h3 class="fs-5 mt-4 px-5 pb-1 text-center">Christopher Rodriguez</h3>
+          <p class="px-4 text-center">Las cosas no tienen por qué cambiar el mundo para ser importantes </p>
+          <p class="text-center">(Steve Jobs)</p>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          
+          <img class="rounded-circle" src="./img/God.jpeg" alt="naruto" width="180" height="180">
+           
+          <div>
+            <h3 class="fs-5 mt-4 px-5 pb-1 text-center">Luis López</h3>
+            <p class="px-4 text-center">Para trabajar basta estar convencido de una cosa: que trabajar es menos aburrido que divertirse</p>
+            <p class="text-center">(Charles Baudelaire)</p>
+          </div>
+          </div>
+      </div>
+      <div class="row w-75 mx-auto ">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          <img class="rounded-circle" src="./img/GUAN.jpeg" alt="naruto" width="180" height="180">
+     <div>
+          <h3 class="fs-5 mt-4 px-5 pb-1 text-center">Juan Hamilton </h3>
+          <p class="px-4 text-center">Cada misión noble parece imposible en un principio</p>
+          <p class="text-center">(Thomas Carlye)</p>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          
+          <img class="rounded-circle" src="./img/Jeymar.jpeg" alt="naruto" width="180" height="180">
+           
+          <div>
+            <h3 class="fs-5 mt-4 px-5 pb-1 text-center"> Jeymar Herrera </h3>
+            <p class="px-4 text-center">Una vez aceptamos nuestros límites, vamos más allá de estos </p>
+            <p class="text-center">(Albert Einstein) </p>
+          </div>
+          </div>
+      </div>
+      <div class="row w-75 mx-auto ">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          
+        <img class="rounded-circle" src="./img/Aaron.jpeg" alt="naruto" width="180" height="180">
+         
+        <div>
+          <h3 class="fs-5 mt-4 px-5 pb-1 text-center">Aaron Murillo</h3>
+          <p class="px-4 text-center">El optimismo perpetuo es un multiplicador de fuerzas </p>
+          <p class="text-center">(Colin Powell)</p>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex  my-5 icono-wrap">
+          
+          <img class="rounded-circle" src="./img/Guillermo.jpeg" alt="naruto" width="180" height="180"> 
+              <div>
+            <h3 class="fs-5 mt-4 px-5 pb-1 text-center">Guillermo Gordon</h3>
+            <p class="px-4 text-center">Si miras en dirección al sol no verás las sombras  </p>
+            <p class="text-center">(Hellen Keller)</p>
+          </div>
+          </div>
+      </div>
+     
+  </section>
+
+            </div>
+            
+            <!-- FOOTER -->
+        <footer class="bg-dark py-4">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark justify-content-between">
+                    <a class="navbar-brand" href="#" title="logo">
+                        <img src="img/logoRP.png" alt="RP logo" style="width: 8rem"/>
+                    </a>
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="contacto_loged.html">contacto</a>
+                      </li>
+                      <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="about_loged.html">sobre el proyecto</a>
+                      </li>
+                      <li class="nav-item text-uppercase">
+                        <a class="nav-link" href="index_loged.jsp">página principal</a>
+                      </li>
+                    </ul>                               
+                </nav>   
+                <hr class="dropdown-divider text-light">
+                <p class="text-center text-light fs-5 mt-5">&copy;2021. Reforzamiento Primaria</p> 
+            </div>            
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
