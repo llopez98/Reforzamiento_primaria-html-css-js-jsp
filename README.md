@@ -8,3 +8,6 @@ El proyecto consta de un inicio de sesión, plataforma de administración crud p
 Frontend: HTML, CSS, Framework BOOTSTRAP <br>
 Backend: JSP - Java WEB <br>
 Base de datos: SQL Server <br>
+
+## Estructura del proyecto
+Este proyecto fue trabajado con el IDE Neatbeans
